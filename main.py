@@ -10,8 +10,19 @@ screen.tracer(0)
 
 
 
+#OBJETOS:
+
+player = Player()
+
+screen.listen() #ouviro o teclado (evento)
+screen.onkeypress(player.mover_up(),"Up")
+screen.onkeypress(player.mover_down(), "Down")
+
+
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+screen.exitonclick()
