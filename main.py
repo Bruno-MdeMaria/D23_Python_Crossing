@@ -15,8 +15,8 @@ screen.tracer(0)
 player = Player()
 
 screen.listen() #ouviro o teclado (evento)
-screen.onkeypress(player.mover_up(),"Up")
-screen.onkeypress(player.mover_down(), "Down")
+screen.onkeypress(player.mover_up,"Up")
+
 
 
 
