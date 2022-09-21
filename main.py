@@ -41,6 +41,7 @@ while game_is_on:
     if player.linha_chegada():   # se o return for True (no método linha_chegada return True ou False):
         player.restart_posi()
         car_maneger.aumentar_nivel()
+        scoreboard.aumentar_nivel()
 
 
 screen.exitonclick()
