@@ -24,7 +24,9 @@ screen.onkeypress(player.mover_up,"Up")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(0.1)      #o loop acontecerá a cada 0,1 segundo.
     screen.update()
+    car_maneger.criar_carros() #criará um novo carro a cada atualização do screen que ocorre´ra a cada 0,1 seg.
+
 
 screen.exitonclick()
