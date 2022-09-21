@@ -36,6 +36,6 @@ while game_is_on:
             game_is_on = False
 
     #detectando o fim da travessia do player:
-    if player.distance
+    game_is_on = player.linha_chegada()
 
 screen.exitonclick()
