@@ -36,6 +36,8 @@ while game_is_on:
             game_is_on = False
 
     #detectando o fim da travessia do player:
-    game_is_on = player.linha_chegada()
+    if player.linha_chegada()   # se o return for True (no método linha_chegada return True ou False):
+        player.restart_posi()
+
 
 screen.exitonclick()

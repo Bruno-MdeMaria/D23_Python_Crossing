@@ -17,10 +17,13 @@ class Player(Turtle):
 
     def mover_up(self):
         self.forward(MOVER_DISTANCIA)
+
+    def restart_posi(self):
+        self.goto(POSICAO_INICIAL)
    
     def linha_chegada(self):
         if self.ycor > FINAL_LINHA_Y:
             return True
         else: return False
-        
+
 
