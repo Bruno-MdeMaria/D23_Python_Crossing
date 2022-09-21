@@ -30,9 +30,12 @@ while game_is_on:
     car_maneger.criar_carros() #criará um novo carro a cada atualização do screen que ocorre´ra a cada 0,1 seg.
     car_maneger.mover_car()
 
-    #desctando colisão com o carro:
+    #detectando colisão com o carro:
     for car in car_maneger.todos_cars:   #para cada carro em lista de carros:
         if car.distance(player) < 20:    #se o carro da lista estiver a uma distancia menor que 20 do obejto player:
             game_is_on = False
+
+    #detectando o fim da travessia do player:
+    if player.distance
 
 screen.exitonclick()
