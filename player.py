@@ -18,3 +18,5 @@ class Player(Turtle):
     def mover_up(self):
         self.forward(MOVER_DISTANCIA)
    
+    def linha_chegada(self):
+        pass
