@@ -4,6 +4,7 @@ from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 from car_manager import CarManager
+from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -15,6 +16,7 @@ screen.tracer(0)
 
 player = Player()
 car_maneger = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen() #ouviro o teclado (evento)
 screen.onkeypress(player.mover_up,"Up")
