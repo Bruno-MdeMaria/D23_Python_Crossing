@@ -36,11 +36,12 @@ while game_is_on:
     for car in car_maneger.todos_cars:   #para cada carro em lista de carros:
         if car.distance(player) < 20:    #se o carro da lista estiver a uma distancia menor que 20 do obejto player:
             game_is_on = False
+            scoreboard.game_over()
 
     #detectando o fim da travessia do player:
     if player.linha_chegada():   # se o return for True (no método linha_chegada return True ou False):
         player.restart_posi()
-        car_maneger.aumentar_nivel()
+        car_maneger.subir_nivel()
         scoreboard.aumentar_nivel()
 
 

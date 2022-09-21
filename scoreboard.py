@@ -13,9 +13,15 @@ class Scoreboard(Turtle):
         self.update_placar()
         
     def update_placar(self):
+        self.clear()
         self.write(f"Level= {self.level}", align="left", font= FONT)
 
     def aumentar_nivel(self):
         self.level +=1
         self.update_placar()
+
+    def game_over(self):
+        self.goto(0,0)
+        self.write("GAME OVER", align="center", font= FONT)
+
         

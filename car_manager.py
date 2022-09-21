@@ -27,7 +27,7 @@ class CarManager:
         for car in self.todos_cars:
             car.back(MOVIMENTO_DISTANCIA)
 
-    def aumentar_nivel(self):
+    def subir_nivel(self):
         self.velocidade_carro += AUMENTO_VELOCIDADE
 
 
