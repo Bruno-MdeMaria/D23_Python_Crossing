@@ -21,3 +21,7 @@ class CarManager(Turtle):
        novo_car.goto(300, randon_y)
        self.todos_cars.append(novo_car)
 
+    def mover_car(self):
+        for car in self.todos_cars:
+            car.backward(STARTING_MOVE_DISTANCE)
+
