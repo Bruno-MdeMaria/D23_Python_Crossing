@@ -38,6 +38,7 @@ while game_is_on:
     #detectando o fim da travessia do player:
     if player.linha_chegada():   # se o return for True (no método linha_chegada return True ou False):
         player.restart_posi()
+        car_maneger.aumentar_nivel()
 
 
 screen.exitonclick()
