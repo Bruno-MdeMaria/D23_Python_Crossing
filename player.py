@@ -11,7 +11,7 @@ class Player(Turtle):
         super().__init__()
         self.shape("turtle")
         self.penup()
-        self.goto(POSICAO_INICIAL)
+        self.restart_posi()   #criado após a função criada abaixo para usar também quando travessia com exito
         self.setheading(90)    #turtle inicar virado para  norte
 
 
@@ -22,7 +22,7 @@ class Player(Turtle):
         self.goto(POSICAO_INICIAL)
    
     def linha_chegada(self):
-        if self.ycor > FINAL_LINHA_Y:
+        if self.ycor() > FINAL_LINHA_Y:
             return True
         else: return False
 
